@@ -19,8 +19,10 @@ Here, there are three important packages to search for and install: "Dapper" and
 # Create "PersonRepository" class:
 Navigate to "Models" folder in the Solution Explorer.
 Right-click on the "Models" folder>Add>New Item>select "Class" and name it "PersonRepository.cs"
-In tis class, you establish the connection with the database and create GetAll and insert methods to interact with the database and its table.
-
+In tis class, you establish the connection with the database and create "GetAll" and "Insert" methods to interact with the database and its table.
+# Create new views under the "Home" folder.
+Right-click on the "Home" folder>Add>View>select "Razor View - Empty">name it "Create.cshtml" and call the model "Person.cs" in it.
+Then set the layout of the form to use for inserting data into the database.
+Navigate to "Index.cshtml" to display the inserted records and call the model "Person.cs" in it.
 # Navigate to "HomeController" in the Solution Explorer:
-Right-click on “Controllers” folder>Add>Controller>name it "BillingController.cs".
-This controller will interact with the “BillingContext” to insert and display data.
+Here, you call in the "PersonRepository.cs" class and its "GetAll" and "Insert" methods.
