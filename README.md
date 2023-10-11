@@ -16,6 +16,11 @@ Navigate to the "appsettings.json" file in the Solution Explorer. In the connect
 # Add a few packages to the solution of the application to enable using Dapper and handle the connection to the database. 
 Right-click on the solution>Manage NuGet Packages for Solution>Browse Tab. 
 Here, there are three important packages to search for and install: "Dapper" and "MySqlConnector".
+# Create "PersonRepository" class:
+Navigate to "Models" folder in the Solution Explorer.
+Right-click on the "Models" folder>Add>New Item>select "Class" and name it "PersonRepository.cs"
+In tis class, you establish the connection with the database and create GetAll and insert methods to interact with the database and its table.
+
 # Navigate to "HomeController" in the Solution Explorer:
 Right-click on “Controllers” folder>Add>Controller>name it "BillingController.cs".
 This controller will interact with the “BillingContext” to insert and display data.
