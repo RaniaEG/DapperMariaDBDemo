@@ -18,8 +18,8 @@ Right-click on the solution>Manage NuGet Packages for Solution>Browse Tab.
 Here, there are three important packages to search for and install: "Dapper" and "MySqlConnector".
 # Create "PersonRepository" class:
 Navigate to "Models" folder in the Solution Explorer.
-Right-click on the "Models" folder>Add>New Item>select "Class" and name it "PersonRepository.cs"
-In tis class, you establish the connection with the database and create "GetAll" and "Insert" methods to interact with the database and its table.
+Right-click on the "Models" folder>Add>New Item>select "Class" and name it "PersonRepository.cs".
+In this class, you establish the connection with the database and create "GetAll" and "Insert" methods to interact with the database and its table.
 # Create a new view under the "Home" folder
 Right-click on the "Home" folder>Add>View>select "Razor View - Empty">name it "Create.cshtml" and call the model "Person.cs" in it.
 Then set the layout of the form to use for inserting data into the database.
